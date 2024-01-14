@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créez votre carte d'étudiant</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <script src="../js/html2pdf.bundle.js"></script>
+</head>
+<body style="background-image: url(../images/FOND.jpg); background-size: cover;">
+    <div class="container mt-5">
+        
+            <form id="identityForm">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <h2 class="text-center mb-4">Création d'une carte d'étudiant</h2>
+                        <div class="form-group">
+                            <label for="fullName">Nom complet: </label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Nom et Prénom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date de naissance: </label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sex">Sexe: </label>
+                            <select name="sexe" id="sex">
+                                <option value="Masculin">Masculin</option>
+                                <option value="Féminin">Féminin</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="adress">Adresse: </label>
+                            <input type="text" class="form-control" id="adress" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Contacts: </label>
+                            <input type="number" class="form-control" id="contact">
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">E-mail: </label>
+                            <input type="text" class="form-control" id="mail" placeholder="name@exemple.com" >
+                        </div>
+                        <div class="form-group">
+                            <label for="mention">Mention: </label>
+                            <input type="text" class="form-control" id="mention" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="level">Niveau: </label>
+                            <input type="text" class="form-control" id="level" placeholder="L1-L2-L3-M1-M2" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="grade">Grade: </label>
+                            <input type="text" class="form-control" id="grade" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">Ajoutez votre photo: </label>
+                            <input type="file" class="form-control-file" id="photo" accept="image/*">
+                        </div>
+        
+                       
+                        <div  class="mb-4"></div>
+                        <button type="button" class="w3-button w3-black w3-round-xxlarge" onclick="generateIdentity()">Générer la carte</button>
+                    </div>
+                </div>
+            </form>
+            <div id="identityCard" class="mt-4"></div>
+   
+
+    </div>
+    
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+
+<script src="../script.js"></script>

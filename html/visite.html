@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créez votre carte d'étudiant</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/visit.css">
+    <script src="../js/html2pdf.bundle.js"></script>
+    <script src="../js/visit.js"></script>
+
+</head>
+<body style="background-image: url(../images/FOND.jpg); background-size: cover;">
+    <div class="container mt-5">
+        
+            <form id="businessForm">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <h2 class="text-center mb-4">Création d'une carte de visite</h2>
+                        <div class="form-group">
+                            <label for="fullName">Nom complet: </label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Nom et Prénom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age: </label>
+                            <input type="number" class="form-control" id="age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sex">Sexe: </label>
+                            <select name="sexe" id="sex">
+                                <option value="Masculin">Masculin</option>
+                                <option value="Féminin">Féminin</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="adress">Adresse: </label>
+                            <input type="text" class="form-control" id="adress" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asa">Profession: </label>
+                            <input type="text" class="form-control" id="asa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ese">Entreprise: </label>
+                            <input type="text" class="form-control" id="ese" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact">Contacts: </label>
+                            <input type="number" class="form-control" id="contact">
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">E-mail: </label>
+                            <input type="text" class="form-control" id="mail" placeholder="name@exemple.com" >
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">Ajoutez votre photo: </label>
+                            <input type="file" class="form-control-file" id="photo" accept="image/*">
+                        </div>
+        
+                       
+                        <div  class="mb-4"></div>
+                        <button type="button" class="w3-button w3-black w3-round-xxlarge" onclick="generatecard()">Générer la carte</button>
+                    </div>
+                </div>
+            </form>
+            <div id="businessCard" class="mt-4"></div>
+        <!-- <div class="row d-flex justify-content-center">
+            <div class="col-md-10 mt-5 pt-5">
+                <div class="row z-depth-3">
+                    <div class="col-sm-4 bg-dark">
+                        <div class="card-block text-center text-white">
+                            <i class="fas fa-user-tie fa-7x mt-5"></i>
+                            <h2 class="font-weight-bold mt-4"> Bidyh Andrianarison</h2>
+                            <p>||Eudiant||</p>
+                            <i class="far fa-edit fa-2x mb-4"></i>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-8 bg-white">
+                        <h3 class="mt-3 text-center">INFORMATIONS PERSONNELLES</h3>
+                        <hr class="bg-dark mt-0 w-250">
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <span class="font-weight-bold">Nom: </span>
+                                    <span class="text-muted">ANDRIANARISON</span>
+                                 </div>
+                                <div class="col-sm-6">
+                                    <span class="font-weight-bold">Prénom: </span>
+                                    <span class="text-muted">Nantenaina Sarobidy</span>
+                                </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <span class="font-weight-bold">Sexe: </span>
+                                    <span class="text-muted">Masculin</span>
+                                 </div>
+                            </div>
+                            <div>
+                                    <span class="font-weight-bold">Contacts: </span>
+                                    <span class="text-muted">032 56 620 85 - 034 39 097 94</span>
+
+                            </div>
+                            <div>
+                                <span class="font-weight-bold">Email: </span>
+                                <span class="text-muted">bidyhandrianarison@gmail.com</span>
+                            </div>
+
+                        <h4 class="mt-3 text-center">EDUCATIONS</h4>
+                        <hr class="bg-dark">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <span class="font-weight-bold">Filière: </span>
+                                <span class="text-muted">Economie</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="font-weight-bold">Niveau: </span>
+                                <span class="text-muted">3ème année  </span>
+                            </div>
+                            <div>
+                                <span class="font-weight-bold">Grade: </span>
+                                <span class="text-muted"> Licence</span>
+
+                            </div>
+                        </div>
+                        
+                        <hr class="bg-dark">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div> -->
+
+    </div>
+    
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+

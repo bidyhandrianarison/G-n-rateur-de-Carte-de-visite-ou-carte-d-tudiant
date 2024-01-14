@@ -1,0 +1,38 @@
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+ 
+
+   button{
+    font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  /* display: inline-block; */
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  /* margin: 10px; */
+  border: 2px solid #fff;
+  color: black;
+  }
+   button:hover{
+    background: #7a7a7a;
+    border: 2px solid  #7a7a7a;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+ 
+ 
+body{
+  background-image: url("../images/FOND.jpg");
+  background-size: cover;
+ 
+} 
