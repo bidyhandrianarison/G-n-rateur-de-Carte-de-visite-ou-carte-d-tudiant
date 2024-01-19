@@ -7,8 +7,8 @@ function generatecard(){
     const sex=document.getElementById('sex').value;
     const contact=document.getElementById('contact').value;
     const mail=document.getElementById('mail').value;
-    // const photoInput = document.getElementById('photo');
-    // const photoUrl=URL.createObjectURL(photoInput.files[0]);
+     const photoInput = document.getElementById('photo');
+     const photoUrl=URL.createObjectURL(photoInput.files[0]);
     
 
 
@@ -20,7 +20,7 @@ function generatecard(){
                 <div class="row z-depth-3">
                     <div class="col-sm-5 bg-dark">
                         <div class="card-block text-center text-white">
-                        <i class="fas fa-user-tie fa-7x mt-5"></i>
+                        <img src="${photoUrl}" class="w3-circle" style="width:50%">
 
                             <h2 class="font-weight-bold mt-4">${fullName}</h2>
                             <p>||${asa}||</p>
